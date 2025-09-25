@@ -1,36 +1,37 @@
-const NUM_LINES = 40;   // how many polylines
-const STEPS = 20;       // segments per polyline
-const STEP_LENGTH = 40; // max step size
+const NUM_LINES = 12;
+const STEPS = 40;
+const STEP_X = 20;
+const STEP_Y = 25;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(600, 800);
   background(255);
   stroke(0);
+  strokeWeight(2);
   noFill();
 
-  // generate multiple random polylines
   for (let i = 0; i < NUM_LINES; i++) {
     drawRandomPolyline();
   }
 }
 
 function drawRandomPolyline() {
-  // start from a random position
-  let x = random(width);
-  let y = random(height);
+  let x = width / 2 + random(-25, 25);
+  let y = height / 2 - 200 + random(-150, 150);
 
   beginShape();
   vertex(x, y);
 
   for (let s = 0; s < STEPS; s++) {
-    // pick a random angle and step length
-    let angle = random(TWO_PI);
-    let len = random(STEP_LENGTH);
+    let dx = random([-STEP_X, STEP_X]);
+    let dy = random(-STEP_Y, STEP_Y);
 
-    x += cos(angle) * len;
-    y += sin(angle) * len;
+    x += dx;
+    y += dy;
 
-    // keep inside canvas
+    let centerBias = (width / 2 - x) * 0.12;
+    x += centerBias;
+
     x = constrain(x, 0, width);
     y = constrain(y, 0, height);
 
