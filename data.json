@@ -1,12 +1,12 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/mainartworkrecreation2.js",
+    "name": "flow fields shades",
+    "description": "made flow fields and instead of lines its worms with fading color "
   },
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/mainartworkrecreation.js",
+    "name": "flow fields with colors ",
+    "description": "made flow fields with smaller lines, randomized colors and different flow"
   }
 ]
