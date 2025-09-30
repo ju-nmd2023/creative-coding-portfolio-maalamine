@@ -1,12 +1,47 @@
 [
   {
-    "file": "experiments/mainartworkrecreation2.js",
-    "name": "flow fields shades",
-    "description": "made flow fields and instead of lines its worms with fading color "
+    "file": "experiments/mainartwork.js",
+    "name": "Flow Field Particles",
+    "description": "Basic flow field implementation with particle trails creating organic black lines on white background"
   },
   {
     "file": "experiments/mainartworkrecreation.js",
-    "name": "flow fields with colors ",
-    "description": "made flow fields with smaller lines, randomized colors and different flow"
+    "name": "Interactive Flow Field with Sound",
+    "description": "Full-screen flow field with audio integration, and colors, featuring white particle trails on black background and wind gust sounds"
+  },
+  {
+    "file": "experiments/mainartworkrecreation2.js",
+    "name": "Enhanced Flow Field",
+    "description": "Full-screen flow field with stronger forces and white particle trails creating dynamic motion patterns"
+  },
+  {
+    "file": "experiments/MichaelNoll.js",
+    "name": "Random Walk Lines",
+    "description": "Generates multiple polyline paths with constrained random steps and center bias, creating organic branching patterns"
+  },
+  {
+    "file": "experiments/MichaelNollRecreation.js",
+    "name": "Enhanced Random Walks",
+    "description": "Variation with more lines, longer paths, and increased step diversity for more complex branching structures"
+  },
+  {
+    "file": "experiments/MichaelNollRecreation2.js",
+    "name": "Random Walks Duplicate",
+    "description": "Similar to the previous recreation with identical parameters for random polyline generation"
+  },
+  {
+    "file": "experiments/VelnaMolnar.js",
+    "name": "Grid of Rotated Squares",
+    "description": "Grid pattern of squares with subtle rotations and single diagonal lines, inspired by Vera Molnár's geometric art"
+  },
+  {
+    "file": "experiments/VelnaMolnarRecreation.js",
+    "name": "Enhanced Geometric Grid",
+    "description": "More complex grid with greater rotation angles, variable square sizes, and multiple intersecting diagonal lines"
+  },
+  {
+    "file": "experiments/VelnaMolnarRecreation2.js",
+    "name": "Sparse Geometric Composition",
+    "description": "Grid with missing squares, systematic rotations based on position, and intersecting diagonals creating rhythmic patterns"
   }
 ]
