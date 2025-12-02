@@ -4,6 +4,10 @@ let cols, rows;
 let zoff = 0;
 let particles = [];
 let flowfield;
+let synth;
+
+
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -15,6 +19,14 @@ function setup() {
   for (let i = 0; i < 800; i++) {
     particles[i] = new Particle();
   }
+
+  synth = new Tone.Synth(
+  { 
+  oscillator: { type: 'sine' }, 
+  envelope: { attack: 0.1, decay: 0.2, sustain: 0.3, release: 1 } }
+  )
+  .toDestination();
+
 }
 
 function draw() {
@@ -43,6 +55,11 @@ function draw() {
     particles[i].update();
     particles[i].edges();
     particles[i].show();
+    if(random() < 0.3){
+      let freq = map(particles[i].pos.x, 0, width, 200, 800);
+      synth.triggerAttackRelease(freq, '8n');
+      Tone.start();
+    }
   }
 }
 

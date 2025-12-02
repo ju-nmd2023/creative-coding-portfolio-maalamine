@@ -6,7 +6,7 @@ let particles = [];
 let flowfield;
 
 function setup() {
-  createCanvas(600, 800);
+  createCanvas(windowWidth, windowHeight);
   background(255);
   cols = floor(width / scl);
   rows = floor(height / scl);
